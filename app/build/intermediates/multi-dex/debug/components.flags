@@ -1,0 +1,80 @@
+-injars /home/som/Workspace/Android/Training/nirbhaya/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /home/som/Workspace/Android/Training/nirbhaya/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /home/som/Android/Sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration /home/som/Workspace/Android/Training/nirbhaya/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.som_itsolutions.nirbhaya.NirbhayaSettings {
+    <init>();
+}
+
+-keep class com.som_itsolutions.nirbhaya.NirbhayaActivity {
+    <init>();
+}
+
+-keep class com.som_itsolutions.nirbhaya.PhoneLocatorService {
+    <init>();
+}
+
+-keep class com.som_itsolutions.nirbhaya.LocationSendService {
+    <init>();
+}
+
+-keep class com.som_itsolutions.nirbhaya.NirbhayaMapsActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.appinvite.PreviewActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}
